@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+	<script>
+		var colors = ["#FFB2E6", "#B2B2B2", "#FFFF94", "#B2FFB2", "orange", "black", "#E6B482", "#7094FF"]
+		function changeColor() {
+		    var col = document.getElementById("button");
+		    document.body.style.backgroundColor = colors[Math.floor((Math.random()*8)+1)];
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-md-offset-4">
+				<div class="thumbnail">
+					<button type="button" id="button" onclick="changeColor()" class="btn btn-default btn-lg btn-block">Press me!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
